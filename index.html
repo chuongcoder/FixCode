@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#06aa5e">
+    <meta name="msapplication-navbutton-color" content="#06aa5e">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Sign up | Basket ™</title>
+    <link rel="shortcut icon" href="/signup/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/styles_main.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <main class="card-container slideUp-animation">
+        <div class="image-container">
+            <h1 class="company">KAISHOP <sup>&trade;</sup></h1>
+            <img src="./assets/images/signUp.svg" class="illustration" alt="Illustration">
+            <p class="quote">Sign up today to get exciting offers..!</p>
+            <a href="#btm" class="mobile-btm-nav">
+                <img src="./assets/images/dbl-arrow.png" alt="Arrow">
+            </a>
+        </div>
+        <form method="post" enctype="multipart/form-data" action="/register" class="row">
+            <div class="form-container slideRight-animation">
+                <h1 class="form-header">Get started</h1>
+
+                <div class="input-container">
+                    <label class="form-label" for="firstName">First Name:</label>
+                    <input id="firstName" placeholder="FirstName" type="text" class="form-control" name="firstName">
+                    <div class="invalid-feedback">Error message for FirstName</div>
+                </div>
+
+                <div class="input-container">
+                    <label class="form-label" for="lastName">Last Name:</label>
+                    <input id="lastName" placeholder="LastName" type="text" class="form-control" name="lastName">
+                    <div class="invalid-feedback">Error message for LastName</div>
+                </div>
+
+                <div class="input-container">
+                    <label class="form-label" for="email">Email:</label>
+                    <input id="email" placeholder="Email" type="email" class="form-control" name="email">
+                    <div class="invalid-feedback">Error message for Email</div>
+                </div>
+
+                <div class="input-container">
+                    <label class="form-label" for="password">Password:</label>
+                    <div class="hidepassword">
+                        <input id="password" placeholder="Password" type="password" class="form-control" name="password">
+                        <img src="./assets/images/eye-close.png" alt="Toggle Password Visibility" style="height: 15px; width: 15px;">
+                    </div>
+                </div>
+
+                <div class="input-container">
+                    <label class="form-label" for="confirmPassword">Confirm Password:</label>
+                    <input id="confirmPassword" placeholder="ConfirmPassword" type="password" class="form-control" name="confirmPassword">
+                    <div class="invalid-feedback">Error message for ConfirmPassword</div>
+                </div>
+
+                <div class="col-12 mb-5">
+                    <button type="submit" class="btn btn-success">Create</button>
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
