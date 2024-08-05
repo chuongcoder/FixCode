@@ -439,7 +439,7 @@
 }
 
 .dropdown-item {
-    /* display: none; */
+    display: none;
     position: absolute;
     top: 33px;
     left: -51px;
@@ -476,7 +476,7 @@
 }
 
 
-.user-icon ::afte   r {
+.user-icon::after {
     position: absolute;
     content: "";
     top: 100%;
@@ -485,6 +485,11 @@
     background: transparent;
     height: 14px;
 }
+
+.user-icon:hover .dropdow-item {
+  display: block;
+}
+
 
 .user-icon:hover .dropdown-item {
     display: block;
